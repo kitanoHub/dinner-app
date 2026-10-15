@@ -22,11 +22,11 @@ function applyConfig(){
   $('label-carb').textContent=L.carb_type;
   $('label-richness').textContent=L.richness;
   $('label-temperature').textContent=L.temperature;
+  $('label-keyword').textContent=L.keyword;
   $('search').textContent=L.search;
   $('reset').textContent=L.reset;
   fill('ingredient',CONFIG.filters.ingredient||['指定なし',...unique(RECIPES.flatMap(r=>r.main_ingredients||[]))]);
   fill('carb',CONFIG.filters.carb_type);
-  fill('dish',CONFIG.filters.dish_type);
   fill('richness',CONFIG.filters.richness);
   fill('temperature',CONFIG.filters.temperature);
 }
@@ -34,31 +34,44 @@ function applyConfig(){
 function scoreRecipe(r){
   const S=CONFIG.scoring;
   let score=0, matched=[];
-  const ingredient=$('ingredient').value, carb=$('carb').value, dish=$('dish').value, richness=$('richness').value;
-  const temperature=$('temperature').value;
+  const ingredient=$('ingredient').value, carb=$('carb').value, richness=$('richness').value, temperature=$('temperature').value;
+  const keyword=$('keyword').value.trim().toLowerCase();
 
   if(ingredient!=='指定なし'&&(r.main_ingredients||[]).includes(ingredient)){score+=S.ingredient_exact;matched.push('食材')}
+
   if(carb!=='指定なし'){
-    const type1match = carb==='鍋' ? (r.dish_type||[]).includes('鍋') : (r.carb_type||[]).includes(carb);
+    let type1match=false;
+    if(carb==='鍋') type1match=(r.dish_type||[]).includes('鍋');
+    else if(carb==='一品料理（おかず）') type1match=!(r.carb_type||[]).includes('米')&&!(r.carb_type||[]).includes('麺')&&!(r.dish_type||[]).includes('鍋');
+    else type1match=(r.carb_type||[]).includes(carb);
     if(type1match){score+=S.carb_type;matched.push('タイプ1')}
   }
-  if(dish!=='指定なし'&&(r.dish_type||[]).includes(dish)){score+=S.dish_type;matched.push('料理タイプ')}
 
   if(richness!=='指定なし'){
     let type2match=false;
     if(['さっぱり','こってり'].includes(richness)) type2match=(r.richness===richness);
     else if(richness==='辛い系') type2match=['少し辛い','辛い'].includes(r.spice)||(r.tags||[]).includes('辛い');
-    else if(richness==='酸っぱい系') type2match=(r.flavors||[]).some(x=>x.includes('酸っぱい')||x.includes('ポン酢'))||(r.tags||[]).includes('酸っぱい');
+    else if(richness==='酸味系') type2match=(r.flavors||[]).some(x=>x.includes('酸っぱい')||x.includes('甘酸っぱい')||x.includes('ポン酢')||x.includes('レモン')||x.includes('ビネガー')||x.includes('バルサミコ'))||(r.tags||[]).includes('酸っぱい');
     else if(richness==='甘い系') type2match=(r.flavors||[]).some(x=>x.includes('甘め')||x.includes('甘辛')||x.includes('甘酸っぱい'));
+    else if(richness==='日本の料理') type2match=(r.tags||[]).includes('日本の料理');
     if(type2match){score+=S.richness;matched.push('タイプ2')}
   }
 
-  if(temperature!=='指定なし'&&(r.temperature||[]).includes(temperature)){score+=S.temperature;matched.push('温度')}
+  if(temperature!=='指定なし'&&(r.temperature||[]).includes(temperature)){score+=S.temperature;matched.push('タイプ3')}
+
+  if(keyword){
+    const name=(r.name||'').toLowerCase();
+    const metadata=[...(r.main_ingredients||[]),...(r.proteins||[]),...(r.dish_type||[]),...(r.carb_type||[]),...(r.flavors||[]),...(r.tags||[])].join(' ').toLowerCase();
+    const recipeText=Object.values(r.recipe_text||{}).flat().join(' ').toLowerCase();
+    if(name.includes(keyword)){score+=S.keyword_name;matched.push('キーワード')}
+    else if(metadata.includes(keyword)){score+=S.keyword_metadata;matched.push('キーワード')}
+    else if(recipeText.includes(keyword)){score+=S.keyword_recipe_text;matched.push('キーワード')}
+  }
   return {...r,score,matched};
 }
 function render(){
-  const ids=['ingredient','carb','dish','richness','temperature'];
-  const active=ids.some(id=>$(id).value!=='指定なし');
+  const ids=['ingredient','carb','richness','temperature'];
+  const active=ids.some(id=>$(id).value!=='指定なし')||$('keyword').value.trim();
   let ranked=RECIPES.map(scoreRecipe).sort((a,b)=>b.score-a.score||a.name.localeCompare(b.name,'ja'));
   if(active) ranked=ranked.filter(r=>r.score>0);
   $('count').textContent=`登録 ${RECIPES.length}件 / 表示 ${ranked.length}件`;
@@ -78,7 +91,8 @@ function render(){
 }
 
 function resetFilters(){
-  for(const id of ['ingredient','carb','dish','richness','temperature']) $(id).selectedIndex=0;
+  for(const id of ['ingredient','carb','richness','temperature']) $(id).selectedIndex=0;
+  $('keyword').value='';
   render();
 }
 
@@ -88,6 +102,7 @@ async function init(){
     RECIPES=await recipesRes.json(); CONFIG=await configRes.json();
     applyConfig(); render();
     $('search').addEventListener('click',render);
+    $('keyword').addEventListener('keydown',e=>{if(e.key==='Enter')render()});
     $('reset').addEventListener('click',resetFilters);
     if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
   }catch(e){

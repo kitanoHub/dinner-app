@@ -1,6 +1,6 @@
 {
-  "name": "今日の晩ごはん",
-  "short_name": "晩ごはん",
+  "name": "我が家のレシピ検索",
+  "short_name": "レシピ検索",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#f7f5f0",
