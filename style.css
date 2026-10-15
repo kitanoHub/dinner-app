@@ -11,3 +11,5 @@ textarea{min-height:78px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:
 .pillrow{display:flex;gap:7px;flex-wrap:wrap}.pill{font-size:12px;background:#f3f6f2;padding:5px 8px;border-radius:999px}.sectiontitle{font-size:13px;font-weight:800;color:var(--muted);margin-top:12px;text-transform:uppercase;letter-spacing:.03em}
 
 .total-recipes{display:inline-block;margin:0 0 14px;padding:7px 10px;border-radius:999px;background:#e7f1eb;font-size:13px;font-weight:800;color:#2f6f4e}
+
+.recipe-photo{width:100%;display:block;border-radius:14px;margin:0 0 12px;aspect-ratio:1/1;object-fit:cover}

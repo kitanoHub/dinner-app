@@ -82,6 +82,7 @@ function render(){
   $('count').textContent=`登録 ${RECIPES.length}件 / 表示 ${ranked.length}件`;
   const top=ranked.slice(0,10);
   $('results').innerHTML=top.length?top.map(r=>`<article class="recipe">
+    ${r.image?`<img class="recipe-photo" src="${r.image}" alt="${r.image_alt||r.name}">`:''}
     <div class="rhead"><div class="emoji">🍽️</div><div><div class="name">${r.name}</div>
     <div class="badges">
       ${(r.carb_type||[]).map(x=>`<span class="badge">${x}</span>`).join('')}
