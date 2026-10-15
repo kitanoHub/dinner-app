@@ -1,56 +1,36 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#2f6f4e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="晩ごはん"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>今日の晩ごはん</title><style>
-:root{--bg:#f7f5f0;--card:#fff;--text:#252525;--muted:#6d6d6d;--accent:#2f6f4e;--accent2:#e7f1eb;--border:#ddd9d0}*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--text)}.wrap{max-width:980px;margin:auto;padding:18px}h1{font-size:28px;margin:8px 0 4px}.sub{color:var(--muted);margin:0 0 18px}.grid{display:grid;grid-template-columns:1fr;gap:14px}@media(min-width:800px){.grid{grid-template-columns:0.9fr 1.1fr}}.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px}.field{margin-top:14px}.field:first-child{margin-top:0}label{font-weight:700;display:block;margin-bottom:7px}select,input,textarea{width:100%;min-height:44px;border:1px solid var(--border);border-radius:11px;background:#fff;padding:10px 11px;font:inherit;font-size:16px}textarea{min-height:78px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:9px}.btn{width:100%;min-height:50px;border:0;border-radius:13px;background:var(--accent);color:#fff;font-size:16px;font-weight:800;margin-top:16px}.btn2{background:#fff;color:var(--accent);border:1px solid var(--accent)}.count{font-size:13px;color:var(--muted);margin-top:10px}.recipe{border-top:1px solid var(--border);padding:15px 0}.recipe:first-child{border-top:0;padding-top:0}.rhead{display:flex;gap:12px;align-items:flex-start}.emoji{font-size:38px}.name{font-size:20px;font-weight:800}.badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.badge{font-size:12px;border:1px solid var(--border);border-radius:999px;padding:5px 8px}.score{font-size:12px;color:var(--muted);margin-top:6px}.ingredients{margin:10px 0 0;font-size:14px}.steps{padding-left:20px;line-height:1.55;font-size:14px}.details{margin-top:10px}.empty{min-height:280px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted)}.pillrow{display:flex;gap:7px;flex-wrap:wrap}.pill{font-size:12px;background:#f3f6f2;padding:5px 8px;border-radius:999px}.sectiontitle{font-size:13px;font-weight:800;color:var(--muted);margin-top:12px;text-transform:uppercase;letter-spacing:.03em}
-</style></head><body><main class="wrap"><h1>今日の晩ごはん 🍳</h1><p class="sub">今の登録レシピから、食材と気分で候補を絞ります。</p><div class="grid"><section class="card">
-<div class="field"><label for="ingredient">使う食材</label><select id="ingredient"></select></div>
-<div class="twocol">
-<div class="field"><label for="base">主食 / タイプ</label><select id="base"></select></div>
-<div class="field"><label for="richness">重さ</label><select id="richness"></select></div>
-<div class="field"><label for="temperature">温度</label><select id="temperature"></select></div>
-<div class="field"><label for="spice">辛さ</label><select id="spice"></select></div>
-<div class="field"><label for="flavor">味の系統</label><select id="flavor"></select></div>
-<div class="field"><label for="special">特徴</label><select id="special"></select></div>
-</div>
-<div class="field"><label for="free">冷蔵庫の食材（自由入力）</label><textarea id="free" placeholder="例：鶏もも肉、長ネギ、卵"></textarea></div>
-<button class="btn" id="search">候補を出す</button><button class="btn btn2" id="reset">条件をリセット</button>
-<div class="count" id="count"></div>
-</section><section class="card" id="results"><div class="empty">条件を選んで「候補を出す」を押してください。</div></section></div></main>
-<script>
-const RECIPES=[{"name": "ワンタンスープ・皿ワンタン", "emoji": "🥟", "servings": "", "time": 30, "base": ["おかず", "汁物"], "temperature": ["あったかい"], "richness": "普通", "flavors": ["醤油", "中華", "酸っぱい", "ごま油"], "spice": "少し辛い", "proteins": ["豚", "海老", "卵"], "main_ingredients": ["豚ひき肉", "海老", "卵", "生姜", "長ネギ"], "tags": ["魚介", "あったかい汁物", "酸っぱい", "中華", "にんにくなし"], "steps": ["【ワンタン】豚ひき肉・海老に、塩・胡椒、卵1個、生姜みじん切り、長ネギみじん切り、片栗粉 大1、日本酒 大1、醤油 小2、オイスターソース 小1.5を加えて混ぜる。", "バットに片栗粉を薄く広げ、具をワンタンの皮で包む。", "沸騰した湯で2〜3分ゆでる。", "【スープ】水400 mL、醤油 大1、鶏ガラ 小1、本だし粉 小2/3、米油 大1、胡椒6振り、味の素4振りを沸かし、ごま油ひと回しと長ネギ輪切りを加える。", "【皿ワンタンのタレ】醤油 大1、米酢 小2、豆板醤 小1/2、砂糖 小1/2、ごま油 小1、味の素4振り、花椒3振りを混ぜる。"]}, {"name": "カレーうどん", "emoji": "🍛", "servings": "1人前", "time": 20, "base": ["麺", "汁物"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["カレー", "だし", "醤油", "甘め"], "spice": "少し辛い", "proteins": ["豚"], "main_ingredients": ["長ネギ", "豚バラ", "油揚げ", "うどん"], "tags": ["あったかい汁物", "だし強め", "うどん"], "steps": ["長ネギを米油で焼き、豚バラを加えて塩胡椒する。", "油揚げスライス、水250 mL、めんつゆ 大1.5、白出汁 大1、醤油 小1、砂糖 小1、酒 大1、みりん 大1、鰹節、カレー粉 小2.5を加える。", "火を弱め、片栗粉 小2＋水 小4を混ぜて加える。", "火を強め、うどんを煮込む。"]}, {"name": "キツネうどん・蕎麦", "emoji": "🍜", "servings": "", "time": 15, "base": ["麺", "汁物"], "temperature": ["あったかい"], "richness": "さっぱり", "flavors": ["だし", "醤油", "甘め"], "spice": "辛くない", "proteins": [], "main_ingredients": ["油揚げ", "長ネギ", "ワカメ", "うどん", "蕎麦"], "tags": ["あったかい汁物", "うどん", "蕎麦", "ベジ寄り"], "steps": ["蕎麦の場合は5分ゆでる。ワカメを戻す。", "【鍋1】水100 mL、醤油 大1、みりん 大3、鰹節 小2、油揚げを入れ、フタをして中弱火で5分。", "【鍋2】水220 mL＋麺つゆ 大2を温め、うどんまたは蕎麦、長ネギを加えて1分煮る。", "好みで七味唐辛子を振る。"]}, {"name": "天津飯", "emoji": "🥚", "servings": "", "time": 18, "base": ["米"], "temperature": ["あったかい"], "richness": "普通", "flavors": ["中華", "醤油", "オイスター"], "spice": "辛くない", "proteins": ["海老", "卵"], "main_ingredients": ["長ネギ", "海老", "椎茸", "卵", "米"], "tags": ["魚介", "卵", "あんかけ", "中華"], "steps": ["長ネギ、海老、椎茸を米油 小1で炒める。", "卵2個に具材、マヨネーズ 小2、塩ひとつまみ、黒胡椒、味の素3振りを混ぜる。", "米油 大1を熱し、卵＋具材を入れて約30秒加熱し、ご飯にのせる。", "【醤油餡】水110 mL、創味シャンタン 小1/3、醤油 小1/2、オイスターソース 小1、日本酒 小1、ごま油 小1、片栗粉 小1を加熱し、とろみがついたらかける。"]}, {"name": "海老レタス炒飯", "emoji": "🍤", "servings": "2人前", "time": 18, "base": ["米"], "temperature": ["あったかい"], "richness": "普通", "flavors": ["中華", "オイスター", "香ばしい"], "spice": "辛くない", "proteins": ["海老", "卵"], "main_ingredients": ["海老", "乾燥小エビ", "卵", "レタス", "米"], "tags": ["魚介", "炒飯", "卵", "中華"], "steps": ["海老を細かく切り、塩胡椒・片栗粉 小2をまぶす。", "卵4個、レタス4枚を用意する。", "米油 大2で乾燥小エビと海老を素揚げ気味に炒め、皿によける。", "卵、米を炒め、味の素16振り、塩 小1、レタス、オイスターソース 大1、黒胡椒、日本酒 大2、五香粉1振りを加える。", "最後に海老を戻して炒め合わせる。"]}, {"name": "無限ライス", "emoji": "🍳", "servings": "", "time": 12, "base": ["米"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["バター醤油", "にんにく", "チーズ"], "spice": "辛くない", "proteins": ["卵"], "main_ingredients": ["卵", "白米", "ニンニク", "小ネギ", "粉チーズ"], "tags": ["卵", "にんにく強め", "がっつり"], "steps": ["目玉焼きを作り、両面を焼いて皿によける。", "ニンニク＋バターを、ニンニクが色づくまで炒める。", "熱い白米＋目玉焼きを加え、黒胡椒、塩 小1/3、味の素7振り、醤油 小1を加える。", "小ネギと粉チーズをかける。"]}, {"name": "油うどん", "emoji": "🥢", "servings": "", "time": 10, "base": ["麺"], "temperature": ["冷たい"], "richness": "さっぱり", "flavors": ["酸っぱい", "ポン酢", "塩", "ごま油", "にんにく"], "spice": "辛くない", "proteins": [], "main_ingredients": ["うどん", "ゆずポン酢", "ニンニク"], "tags": ["冷たい麺", "酸っぱい", "うどん", "にんにく"], "steps": ["うどんを茹で、冷水で冷やす。", "ゆずポン酢 大1.5、鶏ガラ 小1/2、砂糖 小1/2、塩ひとつまみ、ごま油 大1、おろしニンニク、黒胡椒を混ぜる。", "冷やしたうどんとよく和える。"]}, {"name": "冷やし中華", "emoji": "🥒", "servings": "2人前", "time": 18, "base": ["麺"], "temperature": ["冷たい"], "richness": "さっぱり", "flavors": ["酸っぱい", "醤油", "甘酸っぱい"], "spice": "少し辛い", "proteins": ["卵"], "main_ingredients": ["中華麺", "卵"], "tags": ["冷たい麺", "酸っぱい", "中華", "卵"], "steps": ["【タレ】醤油40 mL、米酢40 mL、水60 mL、砂糖 大2、ラー油少々、味の素8振りを混ぜる。", "【錦糸卵】卵2個、水 大2、片栗粉 小1を混ぜ、薄く焼いて細切りにする。", "茹でて冷やした中華麺に錦糸卵と好みの具材をのせ、タレをかける。"]}, {"name": "赤から鍋", "emoji": "🌶️", "servings": "", "time": 20, "base": ["鍋", "汁物"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["辛味噌", "コチュジャン", "醤油", "にんにく", "甘め"], "spice": "辛い", "proteins": [], "main_ingredients": ["コチュジャン", "豆板醤", "ニンニク"], "tags": ["あったかい汁物", "辛い", "韓国風", "にんにく強め"], "steps": ["水500 mL、砂糖 大1、コチュジャン 大2.5、醤油 大2.5、酒 大2.5、白出汁 大2.5、おろしニンニク2個分、豆板醤 小2、オイスターソース 大1/2、味の素4振りを鍋に入れる。", "よく混ぜて加熱し、好みの具材を入れて煮込む。"]}, {"name": "青のりそうめん", "emoji": "🌿", "servings": "", "time": 10, "base": ["麺"], "temperature": ["冷たい"], "richness": "普通", "flavors": ["白だし", "マヨネーズ", "ごま油", "にんにく"], "spice": "辛くない", "proteins": [], "main_ingredients": ["そうめん", "青のり", "マヨネーズ"], "tags": ["冷たい麺", "そうめん", "海藻", "和風"], "steps": ["そうめんを茹でて冷水でしっかり冷やす。", "白だし 大1、マヨネーズ 大1、ガーリックパウダー6振り、黒胡椒4振り、青のり 小1.3、ごま油ひとまわしを混ぜる。", "冷やしたそうめんとよく和える。"]}, {"name": "鶏もも肉 焼き漬け", "emoji": "🍗", "servings": "", "time": 25, "base": ["おかず"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["醤油", "甘辛", "オイスター", "酸っぱい", "にんにく"], "spice": "少し辛い", "proteins": ["鶏"], "main_ingredients": ["鶏もも肉", "長ネギ", "ニンニク"], "tags": ["鶏もも肉", "酸っぱい", "甘辛", "ご飯に合う"], "steps": ["長ネギみじん切り、おろしニンニク1個分、輪切り唐辛子、砂糖 大2、水 大4、オイスターソース 大1、醤油 大4、ごま油 大1、米酢 大1、味の素8振りを混ぜて漬けダレを作る。", "鶏もも肉を焼く。", "熱いうちにタレへ漬け、長ネギと唐辛子を絡めて味をなじませる。"]}, {"name": "ペペロンチーノ", "emoji": "🍝", "servings": "1人前", "time": 18, "base": ["麺", "パスタ"], "temperature": ["あったかい"], "richness": "普通", "flavors": ["塩", "オイル", "にんにく", "唐辛子"], "spice": "少し辛い", "proteins": [], "main_ingredients": ["パスタ", "ニンニク", "唐辛子"], "tags": ["パスタ", "にんにく強め", "イタリアン"], "steps": ["少なめの水＋塩でパスタを9分茹で、軽く水洗いする。", "オリーブオイル少量と荒切りニンニク3片を弱火で加熱する。", "火を止め、余熱で唐辛子を加える。", "パスタ、水適量、味の素5振り、乾燥パセリ、醤油少量、オリーブオイル適量を加えて和える。"]}, {"name": "鶏つくね", "emoji": "🍢", "servings": "", "time": 20, "base": ["おかず"], "temperature": ["あったかい"], "richness": "さっぱり", "flavors": ["塩", "和風"], "spice": "辛くない", "proteins": ["鶏"], "main_ingredients": ["鶏ひき肉", "長ネギ", "大葉"], "tags": ["鶏ひき肉", "塩系", "大葉", "ご飯に合う"], "steps": ["長ネギみじん切り、大葉、鶏ひき肉、塩4〜5振り、片栗粉 大1、日本酒 小2を混ぜる。", "手に油を多めにつけて丸く成形する。", "フライパンに米油を熱し、両面を焼く。", "仕上げに両面へ塩と味の素を振る。"]}, {"name": "あんかけ焼きそば", "emoji": "🍜", "servings": "2人前", "time": 25, "base": ["麺"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["中華", "醤油", "オイスター"], "spice": "辛くない", "proteins": ["豚", "魚介"], "main_ingredients": ["焼きそば麺", "豚肉", "シーフード", "長ネギ", "野菜"], "tags": ["魚介", "あんかけ", "中華", "にんにく"], "steps": ["麺は茹でずに焼き、水50〜100 mLを加えてフタをして蒸す。ごま油 大2を加えて炒める。", "生姜、ニンニク、長ネギ、豚肉、シーフード、野菜を炒める。", "【餡】水300 mL、鶏ガラ 小1、砂糖 小1、片栗粉 大1.3、醤油 大1.3、日本酒 大1.3、オイスターソース 大1.3を混ぜる。", "具材に餡を加えて沸騰させ、弱火でとろみをつけ、麺にかける。"]}, {"name": "キノコクリームパスタ", "emoji": "🍄", "servings": "2人前", "time": 20, "base": ["麺", "パスタ"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["クリーム", "チーズ", "コンソメ"], "spice": "辛くない", "proteins": [], "main_ingredients": ["マッシュルーム", "豆乳", "クリームチーズ", "パスタ"], "tags": ["パスタ", "きのこ", "クリーミー", "洋食"], "steps": ["パスタをまず6分茹でる。", "マッシュルーム1箱を細かくし、オリーブオイル少量＋塩ひとつまみで焦げ目がつくまで炒める。", "コンソメ 大1、白ワイン20 mL、水300 mLを加え、パスタを入れてさらに3分煮る。", "豆乳120 mL、クリームチーズ20 g、塩6振りを加え、粗挽き黒胡椒で仕上げる。"]}, {"name": "ジェノベーゼパスタ", "emoji": "🌱", "servings": "", "time": 18, "base": ["麺", "パスタ"], "temperature": ["あったかい"], "richness": "普通", "flavors": ["バジル", "チーズ", "オイル", "にんにく"], "spice": "辛くない", "proteins": [], "main_ingredients": ["バジル", "カシューナッツ", "ペコリーノロマーノ", "ニンニク", "パスタ"], "tags": ["パスタ", "ハーブ", "チーズ", "ナッツ", "イタリアン"], "steps": ["バジルは茎を取って水洗いする。", "ミキサーにバジル、オリーブオイル、カシューナッツ、ニンニク1/2片、ペコリーノロマーノ、塩、味の素3振り、水適量を入れて攪拌する。", "ソースを鍋に移し、茹でたパスタを加えて和える。"]}, {"name": "ハンバーグ", "emoji": "🍽️", "servings": "", "time": 30, "base": ["おかず"], "temperature": ["あったかい"], "richness": "こってり", "flavors": ["醤油", "にんにく", "洋食", "甘め"], "spice": "辛くない", "proteins": ["牛", "豚"], "main_ingredients": ["牛ひき肉", "豚ひき肉", "玉ねぎ"], "tags": ["牛豚", "ご飯に合う", "洋食", "にんにく"], "steps": ["玉ねぎを細かくする。", "ボウルに玉ねぎ、牛＋豚ひき肉、マヨネーズ 大1.3、パン粉 大3、塩4つまみ、水45 mL、片栗粉 小2、黒胡椒6振り、ガーリックパウダー8振り、味の素8振り、コンソメ 小2/3、ナツメグ6振りを入れてこね、中央を凹ませて成形する。", "米油少量を入れたフライパンで弱火、フタをして焼き、焦げ目がついたら水50 mLを加えて蒸し焼きにする。", "【ソース】醤油・酒・みりん 各大2、味の素2振り、おろしニンニクを煮詰めて絡める。"]}];
-const INGREDIENTS=["うどん", "そうめん", "ゆずポン酢", "カシューナッツ", "クリームチーズ", "コチュジャン", "シーフード", "ニンニク", "バジル", "パスタ", "ペコリーノロマーノ", "マッシュルーム", "マヨネーズ", "レタス", "ワカメ", "中華麺", "乾燥小エビ", "卵", "唐辛子", "大葉", "小ネギ", "椎茸", "油揚げ", "海老", "焼きそば麺", "牛ひき肉", "玉ねぎ", "生姜", "白米", "米", "粉チーズ", "蕎麦", "豆乳", "豆板醤", "豚ひき肉", "豚バラ", "豚肉", "野菜", "長ネギ", "青のり", "鶏ひき肉", "鶏もも肉"];
-const FILTERS={"base": ["指定なし", "米", "麺", "パスタ", "おかず", "鍋", "汁物"], "richness": ["指定なし", "さっぱり", "普通", "こってり"], "temperature": ["指定なし", "あったかい", "冷たい"], "spice": ["指定なし", "辛くない", "少し辛い", "辛い"], "flavor": ["指定なし", "塩", "醤油", "だし", "カレー", "酸っぱい", "甘め", "甘辛", "クリーム", "チーズ", "にんにく", "オイル", "中華", "バジル"], "special": ["指定なし", "魚介", "あったかい汁物", "冷たい麺", "酸っぱい", "卵", "きのこ", "にんにく強め"]};
-function fill(id,arr){const el=document.getElementById(id);el.innerHTML=arr.map(v=>`<option value="${v}">${v}</option>`).join('')}
-fill('ingredient',['指定なし',...INGREDIENTS]);for(const k of ['base','richness','temperature','spice','flavor','special'])fill(k,FILTERS[k]);
-const toks=s=>s.toLowerCase().replace(/[、，]/g,',').split(/[\s,]+/).map(v=>v.trim()).filter(Boolean);
-function scoreRecipe(r){
- let score=0, matched=[];
- const ingredient=document.getElementById('ingredient').value;
- const base=document.getElementById('base').value;
- const richness=document.getElementById('richness').value;
- const temperature=document.getElementById('temperature').value;
- const spice=document.getElementById('spice').value;
- const flavor=document.getElementById('flavor').value;
- const special=document.getElementById('special').value;
- const free=toks(document.getElementById('free').value);
- if(ingredient!=='指定なし'&&r.main_ingredients.includes(ingredient)){score+=10;matched.push('食材')}
- if(base!=='指定なし'&&r.base.includes(base)){score+=7;matched.push('タイプ')}
- if(richness!=='指定なし'&&r.richness===richness){score+=5;matched.push('重さ')}
- if(temperature!=='指定なし'&&r.temperature.includes(temperature)){score+=5;matched.push('温度')}
- if(spice!=='指定なし'&&r.spice===spice){score+=5;matched.push('辛さ')}
- if(flavor!=='指定なし'&&r.flavors.some(x=>x.includes(flavor)||flavor.includes(x))){score+=6;matched.push('味')}
- if(special!=='指定なし'&&(r.tags.includes(special)||r.flavors.includes(special))){score+=6;matched.push('特徴')}
- if(free.length){const hit=[...r.main_ingredients,...r.proteins,...r.tags].filter(x=>free.some(f=>x.toLowerCase().includes(f)||f.includes(x.toLowerCase())));score+=hit.length*4;if(hit.length)matched.push('冷蔵庫')}
- return {...r,score,matched};
-}
-function render(){
- const active=['ingredient','base','richness','temperature','spice','flavor','special'].some(id=>document.getElementById(id).value!=='指定なし')||document.getElementById('free').value.trim();
- let ranked=RECIPES.map(scoreRecipe).sort((a,b)=>b.score-a.score||a.name.localeCompare(b.name,'ja'));
- if(active) ranked=ranked.filter(r=>r.score>0);
- document.getElementById('count').textContent=`登録 ${RECIPES.length}件 / 表示 ${ranked.length}件`;
- const top=ranked.slice(0,8);
- document.getElementById('results').innerHTML=top.length?top.map(r=>`<article class="recipe"><div class="rhead"><div class="emoji">${r.emoji}</div><div><div class="name">${r.name}</div><div class="badges"><span class="badge">${r.base.join('・')}</span><span class="badge">${r.temperature.join('・')}</span><span class="badge">${r.richness}</span><span class="badge">${r.spice}</span>${r.servings?`<span class="badge">${r.servings}</span>`:''}<span class="badge">約${r.time}分</span></div><div class="score">${active?`マッチスコア ${r.score} / ${r.matched.join('・')}`:'登録レシピ'}</div></div></div><div class="sectiontitle">使う食材</div><div class="pillrow">${r.main_ingredients.map(x=>`<span class="pill">${x}</span>`).join('')}</div><details class="details"><summary>レシピを見る</summary><ol class="steps">${r.steps.map(s=>`<li>${s}</li>`).join('')}</ol></details></article>`).join(''):'<div class="empty">この条件に合うレシピがありません。条件を1つ減らしてみてください。</div>';
-}
-document.getElementById('search').addEventListener('click',render);
-document.getElementById('reset').addEventListener('click',()=>{for(const id of ['ingredient','base','richness','temperature','spice','flavor','special'])document.getElementById(id).selectedIndex=0;document.getElementById('free').value='';render()});
-render();
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-</script></body></html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#2f6f4e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="晩ごはん">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="style.css">
+  <title>今日の晩ごはん</title>
+</head>
+<body>
+  <main class="wrap">
+    <h1 id="headline">今日の晩ごはん 🍳</h1>
+    <p class="sub" id="subheadline"></p><div class="total-recipes" id="totalRecipes"></div>
+    <div class="grid">
+      <section class="card">
+        <div class="field"><label id="label-ingredient" for="ingredient"></label><select id="ingredient"></select></div>
+        <div class="twocol">
+          <div class="field"><label id="label-carb" for="carb"></label><select id="carb"></select></div>
+          <div class="field"><label for="dish">料理タイプ</label><select id="dish"></select></div>
+          <div class="field"><label id="label-richness" for="richness"></label><select id="richness"></select></div>
+          <div class="field"><label id="label-temperature" for="temperature"></label><select id="temperature"></select></div>
+        </div>
+        <button class="btn" id="search"></button>
+        <button class="btn btn2" id="reset"></button>
+        <div class="count" id="count"></div>
+      </section>
+      <section class="card" id="results"><div class="empty">読み込み中...</div></section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

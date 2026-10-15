@@ -1,0 +1,70 @@
+{
+  "app_name": "今日の晩ごはん",
+  "ui": {
+    "headline": "今日の晩ごはん 🍳",
+    "subheadline": "登録レシピから、食材と気分で候補を絞ります。",
+    "labels": {
+      "ingredient": "使う食材",
+      "carb_type": "タイプ1",
+      "richness": "タイプ2",
+      "temperature": "タイプ3",
+      "search": "候補を出す",
+      "reset": "条件をリセット"
+    }
+  },
+  "filters": {
+    "carb_type": [
+      "指定なし",
+      "米",
+      "麺",
+      "鍋"
+    ],
+    "dish_type": [
+      "指定なし",
+      "おかず",
+      "丼",
+      "炒飯",
+      "汁物",
+      "鍋",
+      "汁なし",
+      "あんかけ",
+      "焼きそば",
+      "パスタ"
+    ],
+    "richness": [
+      "指定なし",
+      "さっぱり",
+      "こってり",
+      "辛い系",
+      "酸っぱい系",
+      "甘い系"
+    ],
+    "temperature": [
+      "指定なし",
+      "あったかい",
+      "冷たい"
+    ],
+    "ingredient": [
+      "指定なし",
+      "鶏もも肉",
+      "鶏むね肉",
+      "牛ひき肉",
+      "豚ひき肉",
+      "サーモン",
+      "牛肉",
+      "豚バラ肉",
+      "鶏ひき肉"
+    ]
+  },
+  "scoring": {
+    "ingredient_exact": 10,
+    "carb_type": 7,
+    "dish_type": 6,
+    "richness": 5,
+    "temperature": 5,
+    "spice": 5,
+    "flavor": 6,
+    "special": 6,
+    "free_text_match_each": 4
+  }
+}
