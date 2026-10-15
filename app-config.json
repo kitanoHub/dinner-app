@@ -8,7 +8,7 @@
       "carb_type": "タイプ1",
       "richness": "タイプ2",
       "temperature": "タイプ3",
-      "search": "候補を出す",
+      "search": "検索する",
       "reset": "条件をリセット",
       "keyword": "キーワード検索"
     }
