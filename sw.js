@@ -1,5 +1,5 @@
-const CACHE='dinner-maintainable-v18';
-const ASSETS=['./','./index.html','./style.css','./app.js','./recipes.json','./app-config.json','./manifest.webmanifest','./icon-192.png','./icon-512.png','./images/mugen_chocolat_sable.jpg'];
+const CACHE='dinner-maintainable-v20';
+const ASSETS=['./','./index.html','./style.css','./app.js','./recipes.json','./app-config.json','./manifest.webmanifest','./icon-192.png','./icon-512.png','./images/mugen_chocolat_sable.jpg','./images/salad_oil_snowball.jpg'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
 self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match('./index.html')));return}e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))});
