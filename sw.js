@@ -1,4 +1,4 @@
-const CACHE='dinner-maintainable-v24';
+const CACHE='dinner-maintainable-v25';
 const ASSETS=['./','./index.html','./style.css','./app.js','./recipes.json','./app-config.json','./manifest.webmanifest','./icon-192.png','./icon-512.png','./images/mugen_chocolat_sable.jpg','./images/milk_cocoa_snowball.jpg','./images/cookpad_17829982_main.png','./images/cookpad_17829982_step1.png','./images/cookpad_17829982_step2.png','./images/cookpad_17829982_step4.png','./images/cookpad_17829982_step5.png','./images/cookpad_17829982_step6.png','./images/cookpad_17829982_step7.png','./images/cookpad_17829982_step8.png','./images/cookpad_17829982_step9.png','./images/tamago_mushi_pan.jpg'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
