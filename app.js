@@ -10,6 +10,11 @@ function flattenIngredients(obj){
   return Object.entries(obj).map(([section,items])=>`<div class="sectiontitle">${section}</div><ul class="steps">${items.map(s=>`<li>${s}</li>`).join('')}</ul>`).join('');
 }
 
+function renderStepBlocks(blocks){
+  if(!blocks) return '';
+  return blocks.map(b=>`<div class="step-block"><div class="step-number">Step ${b.step}</div><p>${b.text}</p>${b.image?`<img class="step-photo" src="${b.image}" alt="${b.image_alt||''}" loading="lazy">`:''}</div>`).join('');
+}
+
 function flattenRecipeText(obj){
   const lines=[];
   for(const [section,steps] of Object.entries(obj||{})){
@@ -93,7 +98,7 @@ function render(){
     </div><div class="score">${active?`マッチスコア ${r.score} / ${r.matched.join('・')}`:'登録レシピ'}</div></div></div>
     <div class="sectiontitle">使う食材</div><div class="pillrow">${(r.main_ingredients||[]).map(x=>`<span class="pill">${x}</span>`).join('')}</div>
     ${r.ingredient_sections?`<details class="details"><summary>材料・分量を見る</summary>${flattenIngredients(r.ingredient_sections)}</details>`:''}
-    <details class="details"><summary>作り方を見る</summary>${flattenRecipeText(r.recipe_text)}</details>
+    <details class="details"><summary>作り方を見る</summary>${r.step_blocks?renderStepBlocks(r.step_blocks):''}${flattenRecipeText(r.recipe_text)}</details>
   </article>`).join(''):'<div class="empty">この条件に合うレシピがありません。条件を1つ減らしてみてください。</div>';
 }
 

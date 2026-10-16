@@ -13,3 +13,5 @@ textarea{min-height:78px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:
 .total-recipes{display:inline-block;margin:0 0 14px;padding:7px 10px;border-radius:999px;background:#e7f1eb;font-size:13px;font-weight:800;color:#2f6f4e}
 
 .recipe-photo{width:100%;display:block;border-radius:14px;margin:0 0 12px;aspect-ratio:1/1;object-fit:cover}
+
+.step-block{margin:14px 0;padding-top:12px;border-top:1px solid var(--border)}.step-number{font-size:12px;font-weight:800;color:var(--muted);text-transform:uppercase}.step-block p{font-size:14px;line-height:1.6;margin:6px 0 10px}.step-photo{display:block;width:min(100%,320px);height:auto;border-radius:12px;margin:8px 0 14px}
