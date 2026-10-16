@@ -1,5 +1,5 @@
-const CACHE='dinner-maintainable-v22';
-const ASSETS=['./','./index.html','./style.css','./app.js','./recipes.json','./app-config.json','./manifest.webmanifest','./icon-192.png','./icon-512.png','./images/mugen_chocolat_sable.jpg','./images/milk_cocoa_snowball.jpg'];
+const CACHE='dinner-maintainable-v24';
+const ASSETS=['./','./index.html','./style.css','./app.js','./recipes.json','./app-config.json','./manifest.webmanifest','./icon-192.png','./icon-512.png','./images/mugen_chocolat_sable.jpg','./images/milk_cocoa_snowball.jpg','./images/cookpad_17829982_main.png','./images/cookpad_17829982_step1.png','./images/cookpad_17829982_step2.png','./images/cookpad_17829982_step4.png','./images/cookpad_17829982_step5.png','./images/cookpad_17829982_step6.png','./images/cookpad_17829982_step7.png','./images/cookpad_17829982_step8.png','./images/cookpad_17829982_step9.png','./images/tamago_mushi_pan.jpg'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
 self.addEventListener('fetch',e=>{if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).catch(()=>caches.match('./index.html')));return}e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))});
