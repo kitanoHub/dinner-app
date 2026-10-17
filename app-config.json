@@ -62,5 +62,7 @@
     "keyword_name": 20,
     "keyword_metadata": 8,
     "keyword_recipe_text": 4
-  }
+  },
+  "build_version": "v28",
+  "build_note": "Git update workflow test"
 }

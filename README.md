@@ -64,3 +64,6 @@ AIにこのプロジェクト一式を渡す場合は、最初に `START_HERE_FO
 
 料理タイプのドロップダウンは使用しません。
 キーワード検索では料理名を優先し、材料・タグ・レシピ本文も検索対象にします。
+
+## Build v28
+GitHub push workflow test build. Recipe content remains at 109 recipes; a small visible `App version v28` marker was added for deployment verification.
