@@ -4768,8 +4768,7 @@
     "flavors": [
       "醤油",
       "オイスター",
-      "甘め",
-      "酸っぱい"
+      "甘め"
     ],
     "spice": "辛くない",
     "tags": [
@@ -4777,7 +4776,6 @@
       "味玉",
       "漬け",
       "甘辛",
-      "酸っぱい",
       "日本の料理"
     ],
     "source": {
@@ -4793,15 +4791,1257 @@
         "醤油 大さじ4",
         "オイスターソース 大さじ1",
         "水 大さじ5",
-        "ハイミー 7振り",
-        "酢 大さじ1"
+        "ハイミー 7振り"
       ]
     },
     "recipe_text": {
       "作り方": [
-        "醤油 大さじ4、オイスターソース 大さじ1、砂糖 大さじ1、水 大さじ5、ハイミー7振り、酢 大さじ1を混ぜて漬けダレを作る。",
+        "醤油 大さじ4、オイスターソース 大さじ1、砂糖 大さじ1、水 大さじ5、ハイミー7振りを混ぜて漬けダレを作る。",
         "沸騰したお湯で卵を7分茹で、殻をむく。",
         "卵を漬けダレに入れ、6時間漬ける。"
+      ]
+    }
+  },
+  {
+    "id": "condensed-milk-pullapart",
+    "name": "練乳ミルクちぎりパン",
+    "servings": "9個",
+    "time_min": 120,
+    "main_ingredients": [
+      "強力粉",
+      "練乳",
+      "牛乳",
+      "バター"
+    ],
+    "proteins": [],
+    "dish_type": [
+      "パン"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "ミルク",
+      "練乳",
+      "バター"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "パン",
+      "ちぎりパン",
+      "練乳",
+      "ミルク",
+      "発酵パン"
+    ],
+    "source": {
+      "platform": "YouTube",
+      "url": "https://youtu.be/8hj9tZ3CFNk?si=fYtWOWsEcHyX07VE"
+    },
+    "image": "images/condensed_milk_pullapart.jpg",
+    "image_alt": "練乳ミルクちぎりパン",
+    "ingredient_sections": {
+      "予備発酵": [
+        "40℃ほどのぬるま湯 76g",
+        "インスタントドライイースト 3g",
+        "砂糖 1g"
+      ],
+      "生地": [
+        "強力粉 250g",
+        "塩 3.5g",
+        "砂糖 20g",
+        "練乳 40g",
+        "人肌ほどに温めた牛乳 100g",
+        "無塩バター 20g"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "予備発酵材料を混ぜて室温10分。バター20gは約15秒レンジ加熱して柔らかくする。",
+        "生地材料をバター以外入れてまとめ、バターを練り込む。ラップして室温20分。",
+        "ボウル内で3分こね、表面を張らせて丸める。35℃で約20分一次発酵。",
+        "ガス抜きして折り畳み、再度丸めて35℃で35〜40分、2倍になるまで発酵。",
+        "9等分して丸め、室温10分ベンチタイム。ガス抜きして丸め直し、型へ。霧吹き。",
+        "35℃で約35分、1.5倍まで二次発酵。強力粉を振り、170℃で16分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "20cm-banana-brownie",
+    "name": "スクエア型20cm バナナブラウニー",
+    "servings": "20cmスクエア型1台",
+    "time_min": 60,
+    "main_ingredients": [
+      "バナナ",
+      "ミルクチョコレート",
+      "卵",
+      "薄力粉",
+      "ココアパウダー"
+    ],
+    "proteins": [
+      "卵"
+    ],
+    "dish_type": [
+      "お菓子",
+      "焼き菓子"
+    ],
+    "carb_type": [],
+    "temperature": [],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "チョコ",
+      "バナナ"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "ブラウニー",
+      "バナナ",
+      "チョコ",
+      "20cmスクエア型"
+    ],
+    "image": "images/banana_brownie.jpg",
+    "image_alt": "スクエア型20cm バナナブラウニー",
+    "ingredient_sections": {
+      "材料": [
+        "バナナ 2本",
+        "ミルクチョコレート 150g",
+        "無塩バター 50g",
+        "米油 55g",
+        "グラニュー糖 75g",
+        "卵（常温）3個",
+        "薄力粉 105g",
+        "ココアパウダー 45g",
+        "ベーキングパウダー 3g"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "オーブン170℃予熱。型にクッキングシート。バナナ2本を潰し、粉類を合わせてふるう。",
+        "卵3個＋グラニュー糖75gをしっかり混ぜる。",
+        "チョコ150g＋無塩バター50gを600Wで1分〜1分20秒加熱し溶かし、米油55gを少しずつ混ぜる。",
+        "粉類を加えてさっくり混ぜ、卵液を3回に分けて混ぜ、最後にバナナを加える。",
+        "型に流し、170℃で25〜30分焼く。23分以降に竹串確認。",
+        "粗熱後ラップを密着させ、冷蔵庫で一晩寝かせて切る。"
+      ]
+    }
+  },
+  {
+    "id": "choco-banana-stick-bread",
+    "name": "チョコバナナスティックパン",
+    "servings": "10本分",
+    "time_min": 70,
+    "main_ingredients": [
+      "バナナ",
+      "強力粉",
+      "牛乳",
+      "チョコレート"
+    ],
+    "proteins": [],
+    "dish_type": [
+      "パン",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "バナナ",
+      "チョコ"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "パン",
+      "スティックパン",
+      "バナナ",
+      "チョコ",
+      "時短パン"
+    ],
+    "image": "images/choco_banana_stick.jpg",
+    "image_alt": "チョコバナナスティックパン",
+    "ingredient_sections": {
+      "予備発酵": [
+        "バナナ 120g",
+        "牛乳 65g",
+        "ドライイースト 3g"
+      ],
+      "生地": [
+        "強力粉 200g",
+        "塩 3.5g",
+        "砂糖 18g",
+        "無塩バター 20g"
+      ],
+      "折り込み": [
+        "明治ミルクチョコレート 40g（好みで1枚全部でも可）"
+      ],
+      "仕上げ": [
+        "仕上げ用バター 適量"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "バナナを潰し牛乳65gを混ぜ、600W40秒。イースト3gを混ぜ室温5分。",
+        "強力粉・砂糖・塩を加えてまとめ、バター20gを約3分練り込む。",
+        "平らにしてラップなし600W20秒。ヘラで折り畳み、ラップして600W10秒、そのまま庫内20分。",
+        "打ち粉して32×20cmに伸ばし、チョコ半量→三つ折り→残り半量→折る。90度回転して30×12cmに伸ばす。",
+        "10等分して天板へ。最低温度で1分予熱してOFF、霧吹き後15分二次発酵。",
+        "210℃予熱後、12分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "fluffy-oyakodon",
+    "name": "ふわとろ親子丼",
+    "servings": "1人分",
+    "time_min": 15,
+    "main_ingredients": [
+      "鶏もも肉",
+      "玉ねぎ",
+      "卵",
+      "ごはん"
+    ],
+    "proteins": [
+      "鶏",
+      "卵"
+    ],
+    "dish_type": [
+      "丼"
+    ],
+    "carb_type": [
+      "米"
+    ],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "普通",
+    "flavors": [
+      "甘め",
+      "醤油",
+      "白だし"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "親子丼",
+      "鶏もも肉",
+      "卵",
+      "日本の料理"
+    ],
+    "image": "images/fluffy_oyakodon.jpg",
+    "image_alt": "ふわとろ親子丼",
+    "ingredient_sections": {
+      "材料": [
+        "鶏もも肉 80g",
+        "玉ねぎ 1/4個（50g）",
+        "卵 2個",
+        "みりん 大さじ2",
+        "醤油 大さじ1",
+        "白だし 大さじ1",
+        "水 大さじ1",
+        "ごはん 適量"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "鶏もも肉は小さめの一口大、玉ねぎは薄切り。卵は混ぜすぎず数回だけ溶く。",
+        "小さめのフライパンに鶏、玉ねぎ、調味料を全て入れて中火。",
+        "卵の2/3を流し入れ、しっかりめに火を通す。",
+        "残りの卵を入れ、すぐ火を止めてフタ。ご飯にのせる。"
+      ],
+      "ポイント": [
+        "卵は箸で5回くらい混ぜる程度。",
+        "煮汁がなくなりそうなら少量の水を足す。"
+      ]
+    }
+  },
+  {
+    "id": "egg-drop-udon",
+    "name": "卵とじうどん",
+    "servings": "1人前",
+    "time_min": 15,
+    "main_ingredients": [
+      "うどん",
+      "卵",
+      "生姜"
+    ],
+    "proteins": [
+      "卵"
+    ],
+    "dish_type": [
+      "汁物"
+    ],
+    "carb_type": [
+      "麺"
+    ],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "さっぱり",
+    "flavors": [
+      "だし",
+      "醤油",
+      "生姜"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "うどん",
+      "卵",
+      "生姜",
+      "日本の料理",
+      "とろみ"
+    ],
+    "source": {
+      "platform": "クラシル",
+      "url": "https://www.kurashiru.com/recipes/d1e40f3c-432b-4adc-81b1-e927ed61e8af"
+    },
+    "ingredient_sections": {
+      "材料": [
+        "うどん 1玉",
+        "卵 1個",
+        "生姜 10g",
+        "水 400ml",
+        "醤油 大さじ1",
+        "料理酒 大さじ1",
+        "みりん 小さじ2",
+        "顆粒和風だし 小さじ1",
+        "水溶き片栗粉 大さじ1",
+        "小ねぎ 適量"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "生姜を千切り。",
+        "鍋に生姜・水・調味料を入れて沸かし、うどんを表示時間より1分短く煮る。",
+        "弱火にして水溶き片栗粉を加え、とろみをつける。",
+        "再沸騰したら溶き卵を回し入れ、少し固まってから軽く混ぜる。",
+        "器に盛り小ねぎ。"
+      ]
+    }
+  },
+  {
+    "id": "overnight-cream-bread",
+    "name": "夜仕込みクリームパン",
+    "servings": "10個",
+    "time_min": 600,
+    "main_ingredients": [
+      "強力粉",
+      "牛乳",
+      "卵",
+      "カスタード"
+    ],
+    "proteins": [
+      "卵"
+    ],
+    "dish_type": [
+      "パン",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "カスタード",
+      "バター"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "クリームパン",
+      "夜仕込み",
+      "発酵パン"
+    ],
+    "image": "images/overnight_cream_bread.jpg",
+    "image_alt": "夜仕込みクリームパン",
+    "ingredient_sections": {
+      "パン生地": [
+        "強力粉 200g",
+        "砂糖 15g",
+        "塩 3g",
+        "ドライイースト 3g",
+        "牛乳 140g",
+        "無塩バター 15g"
+      ],
+      "カスタード": [
+        "卵 1個",
+        "砂糖 40g",
+        "薄力粉 15g",
+        "牛乳 200ml",
+        "バニラエッセンス 少々",
+        "無塩バター 10g"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "牛乳・砂糖・イーストを混ぜ、強力粉と塩を加える。粉気が消えたらバターを加えてなじませ、ひとまとめにして冷蔵庫で一晩発酵。",
+        "カスタードは卵＋砂糖→薄力粉→牛乳の順に混ぜ、中火でとろみをつけ、バターとバニラを加える。密着ラップで冷却。",
+        "翌朝、生地を10等分し、カスタードを包む。閉じ目をしっかりつまむ。",
+        "天板で20〜30分置き、ふっくらしたら溶き卵を塗る。180℃で15分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "diamant-cookie-basic",
+    "name": "ディアマンクッキー（基本生地）",
+    "servings": null,
+    "time_min": 240,
+    "main_ingredients": [
+      "薄力粉",
+      "バター",
+      "アーモンドプードル"
+    ],
+    "proteins": [],
+    "dish_type": [
+      "お菓子",
+      "焼き菓子"
+    ],
+    "carb_type": [],
+    "temperature": [],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "バター",
+      "アーモンド"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "クッキー",
+      "ディアマン",
+      "焼き菓子"
+    ],
+    "image": "images/diamant_cookie.jpg",
+    "image_alt": "ディアマンクッキー",
+    "ingredient_sections": {
+      "材料": [
+        "バター 25g",
+        "薄力粉 40g",
+        "アーモンドプードル 5g",
+        "砂糖 14g",
+        "牛乳 7g",
+        "グラニュー糖 適量"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "常温バターを練り、砂糖を加え白っぽくなるまで混ぜる。",
+        "牛乳、アーモンドプードルを順に加える。アレンジ材料を入れる場合はここ。",
+        "薄力粉を加えさっくり混ぜ、ひとまとめにして冷蔵30分。",
+        "直径約3cm・長さ約20cmの棒状にし、冷蔵約3時間（急ぐ場合冷凍30分）。",
+        "表面に水を塗りグラニュー糖をまぶし、1cm幅に切る。",
+        "170℃で15分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "choco-chip-roll-bread",
+    "name": "チョコチップロールパン",
+    "servings": "8個",
+    "time_min": 140,
+    "main_ingredients": [
+      "強力粉",
+      "ココアパウダー",
+      "チョコチップ"
+    ],
+    "proteins": [],
+    "dish_type": [
+      "パン",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "チョコ",
+      "ココア"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "チョコパン",
+      "ロールパン",
+      "発酵パン"
+    ],
+    "image": "images/choco_chip_roll.jpg",
+    "image_alt": "チョコチップロールパン",
+    "ingredient_sections": {
+      "生地": [
+        "強力粉 200g",
+        "ココアパウダー 15g",
+        "砂糖 30g",
+        "ドライイースト 3g",
+        "塩 2g",
+        "牛乳 140g",
+        "無塩バター 15g"
+      ],
+      "フィリング": [
+        "チョコチップ 50g"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "強力粉、ココア、砂糖、イースト、塩、牛乳をこねる。途中でバターを加え、機械で約20分。",
+        "60分一次発酵。",
+        "四角く伸ばし、チョコチップを散らす。手前から巻き、閉じ目を閉じる。",
+        "8等分して天板へ。濡れ布巾をかけ35℃で30分二次発酵。",
+        "表面に牛乳を塗り、180℃で約18分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "almond-roll-pullapart",
+    "name": "アーモンドロールちぎりパン",
+    "servings": "18cmスクエア型1台（9個）",
+    "time_min": 180,
+    "main_ingredients": [
+      "強力粉",
+      "アーモンドプードル",
+      "卵",
+      "バター"
+    ],
+    "proteins": [
+      "卵"
+    ],
+    "dish_type": [
+      "パン",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "アーモンド",
+      "バター"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "ちぎりパン",
+      "アーモンド",
+      "発酵パン"
+    ],
+    "image": "images/almond_roll_pullapart.jpg",
+    "image_alt": "アーモンドロールちぎりパン",
+    "ingredient_sections": {
+      "パン生地": [
+        "強力粉 200g",
+        "砂糖 25g",
+        "塩 3g",
+        "ドライイースト 3g",
+        "全卵 20g",
+        "牛乳 60g",
+        "水 60g",
+        "バター 20g"
+      ],
+      "アーモンドクリーム": [
+        "バター 30g",
+        "砂糖 30g",
+        "卵 30g",
+        "アーモンドプードル 30g"
+      ]
+    },
+    "step_blocks": [
+      {
+        "step": 1,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_01.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順1"
+      },
+      {
+        "step": 2,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_02.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順2"
+      },
+      {
+        "step": 3,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_03.png",
+        "image_alt": "アーモンドロールちぎりパン 手順3"
+      },
+      {
+        "step": 4,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_04.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順4"
+      },
+      {
+        "step": 5,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_05.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順5"
+      },
+      {
+        "step": 6,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_06.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順6"
+      },
+      {
+        "step": 7,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_07.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順7"
+      },
+      {
+        "step": 8,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_08.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順8"
+      },
+      {
+        "step": 9,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_09.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順9"
+      },
+      {
+        "step": 10,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_10.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順10"
+      },
+      {
+        "step": 11,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_11.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順11"
+      },
+      {
+        "step": 12,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_12.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順12"
+      },
+      {
+        "step": 13,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_13.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順13"
+      },
+      {
+        "step": 14,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_14.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順14"
+      },
+      {
+        "step": 15,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_15.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順15"
+      },
+      {
+        "step": 16,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_16.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順16"
+      },
+      {
+        "step": 17,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_17.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順17"
+      },
+      {
+        "step": 18,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_18.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順18"
+      },
+      {
+        "step": 19,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_19.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順19"
+      },
+      {
+        "step": 20,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_20.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順20"
+      },
+      {
+        "step": 21,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_21.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順21"
+      },
+      {
+        "step": 22,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_22.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順22"
+      },
+      {
+        "step": 23,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_23.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順23"
+      },
+      {
+        "step": 24,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_24.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順24"
+      },
+      {
+        "step": 25,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_25.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順25"
+      },
+      {
+        "step": 26,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_26.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順26"
+      },
+      {
+        "step": 27,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_27.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順27"
+      },
+      {
+        "step": 28,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_28.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順28"
+      },
+      {
+        "step": 29,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_29.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順29"
+      },
+      {
+        "step": 30,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_30.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順30"
+      },
+      {
+        "step": 31,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_31.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順31"
+      },
+      {
+        "step": 32,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_32.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順32"
+      },
+      {
+        "step": 33,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_33.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順33"
+      },
+      {
+        "step": 34,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_34.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順34"
+      },
+      {
+        "step": 35,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_35.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順35"
+      },
+      {
+        "step": 36,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_36.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順36"
+      },
+      {
+        "step": 37,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_37.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順37"
+      },
+      {
+        "step": 38,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_38.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順38"
+      },
+      {
+        "step": 39,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_39.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順39"
+      },
+      {
+        "step": 40,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_40.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順40"
+      },
+      {
+        "step": 41,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_41.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順41"
+      },
+      {
+        "step": 42,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_42.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順42"
+      },
+      {
+        "step": 43,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_43.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順43"
+      },
+      {
+        "step": 44,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_44.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順44"
+      },
+      {
+        "step": 45,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_45.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順45"
+      },
+      {
+        "step": 46,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_46.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順46"
+      },
+      {
+        "step": 47,
+        "text": "手順写真",
+        "image": "images/almond_roll_step_47.jpeg",
+        "image_alt": "アーモンドロールちぎりパン 手順47"
+      }
+    ],
+    "recipe_text": {
+      "作り方": [
+        "牛乳＋水にイーストを溶かし、卵を溶いて加える。強力粉・砂糖・塩と混ぜてこね、よくこねてからバターを加える。",
+        "生地をまとめ、35℃で約2倍になるまで一次発酵（今回70分）。",
+        "その間にアーモンドクリーム：柔らかいバター→砂糖→卵→アーモンドプードルの順に混ぜ、使用まで冷蔵。",
+        "生地を三つ折りしながらガス抜きし、20分ベンチタイム。",
+        "縦20cm×横32cmに伸ばし、アーモンドクリームを上2cmほど空けて塗る。巻いて閉じ目をつまむ。",
+        "3.5cm間隔で9等分し18cmスクエア型へ。30℃で約1.5倍まで二次発酵（今回40分）。",
+        "残しておいたアーモンドクリームを上に塗り、好みでアーモンドスライス。",
+        "200℃で15分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "banana-caramel-choco-pullapart",
+    "name": "バナナとキャラメルチョコのちぎりパン",
+    "servings": "18cmスクエア型1台（16個）",
+    "time_min": 190,
+    "main_ingredients": [
+      "強力粉",
+      "バナナ",
+      "キャラメルチョコチップ"
+    ],
+    "proteins": [],
+    "dish_type": [
+      "パン",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "バナナ",
+      "キャラメル",
+      "チョコ"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "ちぎりパン",
+      "バナナ",
+      "キャラメルチョコ",
+      "発酵パン"
+    ],
+    "image": "images/banana_caramel_pullapart.jpg",
+    "image_alt": "バナナとキャラメルチョコのちぎりパン",
+    "ingredient_sections": {
+      "材料": [
+        "強力粉 250g",
+        "砂糖 20g",
+        "塩 4g",
+        "バナナ 150g",
+        "牛乳 50g程度から調整（今回は最終65g）",
+        "ドライイースト 3g",
+        "無塩バター 25g",
+        "キャラメルチョコチップ 3g×16",
+        "アーモンドスライス 好みで"
+      ]
+    },
+    "step_blocks": [
+      {
+        "step": 1,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_01.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順1"
+      },
+      {
+        "step": 2,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_02.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順2"
+      },
+      {
+        "step": 3,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_03.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順3"
+      },
+      {
+        "step": 4,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_04.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順4"
+      },
+      {
+        "step": 5,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_05.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順5"
+      },
+      {
+        "step": 6,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_06.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順6"
+      },
+      {
+        "step": 7,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_07.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順7"
+      },
+      {
+        "step": 8,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_08.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順8"
+      },
+      {
+        "step": 9,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_09.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順9"
+      },
+      {
+        "step": 10,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_10.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順10"
+      },
+      {
+        "step": 11,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_11.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順11"
+      },
+      {
+        "step": 12,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_12.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順12"
+      },
+      {
+        "step": 13,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_13.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順13"
+      },
+      {
+        "step": 14,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_14.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順14"
+      },
+      {
+        "step": 15,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_15.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順15"
+      },
+      {
+        "step": 16,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_16.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順16"
+      },
+      {
+        "step": 17,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_17.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順17"
+      },
+      {
+        "step": 18,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_18.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順18"
+      },
+      {
+        "step": 19,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_19.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順19"
+      },
+      {
+        "step": 20,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_20.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順20"
+      },
+      {
+        "step": 21,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_21.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順21"
+      },
+      {
+        "step": 22,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_22.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順22"
+      },
+      {
+        "step": 23,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_23.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順23"
+      },
+      {
+        "step": 24,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_24.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順24"
+      },
+      {
+        "step": 25,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_25.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順25"
+      },
+      {
+        "step": 26,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_26.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順26"
+      },
+      {
+        "step": 27,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_27.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順27"
+      },
+      {
+        "step": 28,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_28.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順28"
+      },
+      {
+        "step": 29,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_29.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順29"
+      },
+      {
+        "step": 30,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_30.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順30"
+      },
+      {
+        "step": 31,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_31.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順31"
+      },
+      {
+        "step": 32,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_32.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順32"
+      },
+      {
+        "step": 33,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_33.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順33"
+      },
+      {
+        "step": 34,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_34.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順34"
+      },
+      {
+        "step": 35,
+        "text": "手順写真",
+        "image": "images/banana_caramel_step_35.jpeg",
+        "image_alt": "バナナとキャラメルチョコのちぎりパン 手順35"
+      }
+    ],
+    "recipe_text": {
+      "作り方": [
+        "バナナを潰し、牛乳を加えて少し温める。イーストを溶かす。",
+        "強力粉・砂糖・塩と混ぜ、こねてからバターを加えてさらにこねる。",
+        "35℃で約2倍まで一次発酵（今回80分）。",
+        "16等分してキャラメルチョコチップ3gずつを包み、軽く丸める。",
+        "15分ベンチタイム。大きいガスを抜いて丸め直し、閉じ目をつまむ。",
+        "18cmスクエア型に並べ、35℃で二次発酵（今回約60分）。",
+        "好みでアーモンドスライスをのせる。",
+        "190℃で18分焼く。"
+      ]
+    }
+  },
+  {
+    "id": "frozen-stock-french-toast",
+    "name": "冷凍ストックフレンチトースト",
+    "servings": "1枚分",
+    "time_min": 40,
+    "main_ingredients": [
+      "食パン",
+      "卵",
+      "牛乳"
+    ],
+    "proteins": [
+      "卵"
+    ],
+    "dish_type": [
+      "パン",
+      "朝食",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "バター"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "フレンチトースト",
+      "冷凍ストック",
+      "朝食"
+    ],
+    "image": "images/frozen_french_toast.jpg",
+    "image_alt": "冷凍ストックフレンチトースト",
+    "ingredient_sections": {
+      "材料": [
+        "食パン 1枚",
+        "卵 1個",
+        "牛乳 60ml",
+        "砂糖 大さじ1",
+        "バター 適量（焼く用）"
+      ]
+    },
+    "recipe_text": {
+      "冷凍ストック": [
+        "食パンを4等分。保存袋で卵・牛乳・砂糖を混ぜる。",
+        "食パンを入れ空気を抜き、冷蔵庫で約30分染み込ませてから平らに冷凍。"
+      ],
+      "食べるとき": [
+        "フライパンにバターを溶かし、凍ったまま片面を中火約2分。",
+        "裏返してフタをし、中火でさらに約2分。"
+      ],
+      "ポイント": [
+        "2週間以内を目安に食べ切る。"
+      ]
+    }
+  },
+  {
+    "id": "honey-butter-bread",
+    "name": "はちみつバターパン",
+    "servings": "9個",
+    "time_min": 90,
+    "main_ingredients": [
+      "強力粉",
+      "はちみつ",
+      "バター",
+      "牛乳"
+    ],
+    "proteins": [],
+    "dish_type": [
+      "パン",
+      "お菓子"
+    ],
+    "carb_type": [],
+    "temperature": [
+      "あったかい"
+    ],
+    "richness": "こってり",
+    "flavors": [
+      "甘め",
+      "はちみつ",
+      "バター"
+    ],
+    "spice": "辛くない",
+    "tags": [
+      "はちみつ",
+      "バター",
+      "時短パン",
+      "発酵パン"
+    ],
+    "image": "images/honey_butter_bread.jpg",
+    "image_alt": "はちみつバターパン",
+    "ingredient_sections": {
+      "予備発酵": [
+        "水 80g",
+        "牛乳 65g",
+        "インスタントドライイースト 3g",
+        "砂糖 1g"
+      ],
+      "生地": [
+        "強力粉 200g",
+        "塩 3.5g",
+        "砂糖 16g",
+        "米油 12g"
+      ],
+      "はちみつバターフィリング": [
+        "無塩バター 40g",
+        "はちみつ 40g",
+        "塩 少々"
+      ],
+      "仕上げ": [
+        "牛乳 適量"
+      ]
+    },
+    "recipe_text": {
+      "作り方": [
+        "水＋牛乳を600W40秒で約40℃。イースト＋砂糖を混ぜ室温5分。",
+        "フィリング用バター40gを600W約20秒で柔らかくする。",
+        "生地材料を混ぜ、ラップなし600W20秒。折り畳んで丸め、ラップして600W10秒、そのまま庫内15分。",
+        "バターにはちみつを2回に分けて混ぜ、塩少々。9cm四方に包み、使用直前まで冷凍。",
+        "生地を9等分して丸め、室温5分ベンチタイム。",
+        "フィリングを9等分し、生地で包んで型へ。霧吹き。最低温度で1分予熱してOFFし、15分二次発酵。",
+        "190℃予熱、表面に牛乳を塗り、17〜18分焼く。"
       ]
     }
   }
