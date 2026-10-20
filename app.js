@@ -34,7 +34,6 @@ function applyConfig(){
   $('label-temperature').textContent=L.temperature;
   $('label-keyword').textContent=L.keyword;
   $('search').textContent=L.search;
-  $('reset').textContent=L.reset;
   fill('ingredient',CONFIG.filters.ingredient||['指定なし',...unique(RECIPES.flatMap(r=>r.main_ingredients||[]))]);
   fill('carb',CONFIG.filters.carb_type);
   fill('richness',CONFIG.filters.richness);
@@ -94,7 +93,7 @@ function render(){
       ${(r.dish_type||[]).map(x=>`<span class="badge">${x}</span>`).join('')}
       ${(r.temperature||[]).map(x=>`<span class="badge">${x}</span>`).join('')}
       <span class="badge">${r.richness}</span><span class="badge">${r.spice}</span>
-      ${r.servings?`<span class="badge">${r.servings}</span>`:''}<span class="badge">約${r.time_min}分</span>
+      ${r.servings?`<span class="badge">${r.servings}</span>`:''}${r.time_min?`<span class="badge">約${r.time_min}分</span>`:''}
     </div><div class="score">${active?`マッチスコア ${r.score} / ${r.matched.join('・')}`:'登録レシピ'}</div></div></div>
     <div class="sectiontitle">使う食材</div><div class="pillrow">${(r.main_ingredients||[]).map(x=>`<span class="pill">${x}</span>`).join('')}</div>
     ${r.ingredient_sections?`<details class="details"><summary>材料・分量を見る</summary>${flattenIngredients(r.ingredient_sections)}</details>`:''}
@@ -102,11 +101,6 @@ function render(){
   </article>`).join(''):'<div class="empty">この条件に合うレシピがありません。条件を1つ減らしてみてください。</div>';
 }
 
-function resetFilters(){
-  for(const id of ['ingredient','carb','richness','temperature']) $(id).selectedIndex=0;
-  $('keyword').value='';
-  render();
-}
 
 async function init(){
   try{
@@ -115,7 +109,6 @@ async function init(){
     applyConfig(); render();
     $('search').addEventListener('click',render);
     $('keyword').addEventListener('keydown',e=>{if(e.key==='Enter')render()});
-    $('reset').addEventListener('click',resetFilters);
     if('serviceWorker' in navigator) window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
   }catch(e){
     $('results').innerHTML='<div class="empty">データの読み込みに失敗しました。HTTPサーバー経由で開いているか確認してください。</div>';

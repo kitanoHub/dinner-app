@@ -55,7 +55,7 @@ AIにこのプロジェクト一式を渡す場合は、最初に `START_HERE_FO
 この項目は全材料を自動表示せず、`app-config.json` の `filters.ingredient` で主要食材だけを管理します。
 
 ## 登録レシピ数
-現在109件。
+現在112件。
 
 ## 現在の検索項目
 - 使う食材
@@ -67,3 +67,7 @@ AIにこのプロジェクト一式を渡す場合は、最初に `START_HERE_FO
 
 ## Build v28
 GitHub push workflow test build. Recipe content remains at 109 recipes; a small visible `App version v28` marker was added for deployment verification.
+
+
+## Build v29
+112 recipes. Added 至高の天津飯、煮込みハンバーグ（牛ひき肉450g版）、世界チャンピオンのキノコパスタ。検索画面の「条件をリセット」ボタンを削除。

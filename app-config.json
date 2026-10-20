@@ -9,7 +9,6 @@
       "richness": "タイプ2",
       "temperature": "タイプ3",
       "search": "検索する",
-      "reset": "条件をリセット",
       "keyword": "キーワード検索"
     }
   },
@@ -63,6 +62,6 @@
     "keyword_metadata": 8,
     "keyword_recipe_text": 4
   },
-  "build_version": "v28",
-  "build_note": "Git update workflow test"
+  "build_version": "v29",
+  "build_note": "Added 3 recipes and removed reset button"
 }
